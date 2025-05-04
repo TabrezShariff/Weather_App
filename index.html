@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weather-container">
+      <div class="left-section">
+        <h2 class="day"></h2>
+        <p class="date"></p>
+        <div class="location">
+          <img
+            class="map_icon"
+            src="assets/images/map_icon.png"
+            width="20px"
+            alt="nil"
+          />
+          <p></p>
+        </div>
+        <img class="icon" src="" alt="nil"/>
+        <h1 class="temp"></h1>
+        <h3 class="temp_detail"></h3>
+      </div>
+
+      <div class="right-section">
+        <div class="extra-info">
+          <p id="prec"></p>
+          <p id="hum"></p>
+          <p id="win"></p>
+        </div>
+        <div class="forecast">
+          <div class="weekday">
+            <p></p>
+            <p></p>
+          </div>
+          <div class="weekday">
+            <p></p>
+            <p></p>
+          </div>
+          <div class="weekday">
+            <p></p>
+            <p></p>
+          </div>
+          <div class="weekday">
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+        <div class="search-location">
+          <input
+            type="text"
+            id="location-input"
+            placeholder="Enter city name..."
+          />
+          <button onclick="searchCity()">Search</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
